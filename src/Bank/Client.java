@@ -1,6 +1,6 @@
 package Bank;
 
-public class Client {
+public abstract class Client {
 
     private String name;
     private String address;

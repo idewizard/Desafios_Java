@@ -2,24 +2,16 @@ package Bank;
 
 public class Account extends Client  {
 
-    private Client client;
+
     private int number;
     private int password;
 
-    public Account(Client client, int number, int password) {
-        super(client.getName(), client.getAddress());
-        this.client = client;
+    public Account(String name, String address, int number, int password) {
+        super(name,address);
         this.number = number;
         this.password = password;
     }
 
-    public Client getClient() {
-        return client;
-    }
-
-    public void setClient(Client client) {
-        this.client = client;
-    }
 
     public int getNumber() {
         return number;
